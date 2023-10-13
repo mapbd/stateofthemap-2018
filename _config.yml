@@ -18,7 +18,7 @@ color:
 permalink: /2018/:title/
 defaults:
   - scope:
-      path: ""
+      path: "/stateofthemap-2018/"
       type: posts
     values:
       permalink: /2018/:title/
