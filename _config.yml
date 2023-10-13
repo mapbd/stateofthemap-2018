@@ -1,9 +1,9 @@
 # Site settings
 title: YouthMappers Bangladesh Summit 2023
 email: info.ymbd@gmail.com
-description: "Join for three days of talks, discussions and workshops around the free and open map of the world."
-baseurl: "/stateofthemap-2018/" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+description: ""
+baseurl: "/ybs2023/" # the subpath of your site, e.g. /blog/
+url: "https://mapbd.github.io/ybs2023/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -18,7 +18,7 @@ color:
 permalink: /2018/:title/
 defaults:
   - scope:
-      path: "/stateofthemap-2018/"
+      path: "/ybs2023"
       type: posts
     values:
       permalink: /2018/:title/
