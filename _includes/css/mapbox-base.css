@@ -2991,11 +2991,11 @@ Alternate exists for:
 .fill-grey-dark,
 .fill-gray-dark   { background:#404040; }
 .fill-white       { background:#fff; }
-.fill-light       { background:rgb(0, 47, 22) }
+.fill-light       { background:rgb(39, 3, 64) }
 /* deprecated, use fill-cyan */
 .fill-blue-light  { background:#52a1d8; }
 .fill-cyan        { background:#3bb2d0; }
-.fill-midnight    { background:#006c33; }
+.fill-midnight    { background:#743a9c; }
 
 .fill-blue         { background:#3887be; }
 .fill-denim        { background:#50667f; }
