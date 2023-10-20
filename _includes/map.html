@@ -5,17 +5,17 @@
 <script>
     const map = L.map('map').setView([23.8664,90.3145], 15);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     const LeafIcon = L.Icon.extend({
         options: {
-            shadowUrl: '',
-            iconSize:     [58, 95],
+            shadowUrl: 'img/marker_shadows.png',
+            iconSize:     [35, 70],
             shadowSize:   [50, 64],
             iconAnchor:   [22, 94],
-            shadowAnchor: [4, 62],
+            shadowAnchor: [9, 83],
             popupAnchor:  [-3, -76]
         }
     });
@@ -23,43 +23,7 @@
     const greenIcon = new LeafIcon({iconUrl: 'img/marker.png'});
 
     const mGreen = L.marker([23.86635, 90.31427], {icon: greenIcon}).bindPopup('Eastern University').addTo(map);
-    // const mRed = L.marker([51.495, -0.083], {icon: redIcon}).bindPopup('I am a red leaf.').addTo(map);
-    // const mOrange = L.marker([51.49, -0.1], {icon: orangeIcon}).bindPopup('I am an orange leaf.').addTo(map);
+    
 
 </script>
  
-
-
-
-<!-- <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhdGVvZnRoZW1hcCIsImEiOiJjaXowOTh4am4wMWduMzNtbmtoY2V2Zzd6In0.4haxNzxFpuAssnAYc9XVAg';
-var map = new mapboxgl.Map({
-    container: 'mapbox-map', // container id
-    style: 'mapbox://styles/stateofthemap/ciz09a1cb000f2rplsvcyln0j',
-    center: [9.22697, 45.47811], // starting position 23.8668166553246, 90.31510090890227
-    zoom: 16 // starting zoom
-});
-map.on('style.load', function() {
-    console.log('loaded')
-    $('.mapboxgl-ctrl-attrib.mapboxgl-ctrl').remove();
-    $('.mapboxgl-ctrl-bottom-right').append('<div class="mapboxgl-ctrl-attrib mapboxgl-ctrl">\
-    <a href="https://www.openstreetmap.org/about" target="_blank">Map data</a>\
-    <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>\
-    <a href="https://www.openstreetmap.org/fixthemap" target="_blank"><i class="fa fa-wrench" aria-hidden="true"></i></a>\
-    <a href="https://donate.openstreetmap.org" target="_blank"><i class="fa fa-heart" aria-hidden="true"></i></a>\
-    <a href="https://join.osmfoundation.org" target="_blank"><i class="fa fa-map" aria-hidden="true"></i></a>\
-    </div>');
-});
-var el = document.createElement('div');
-el.className = 'marker';
-el.style.marginTop = '-35px';
-new mapboxgl.Marker(el)
-  .setLngLat([23.86635, 90.31427])
-  .addTo(map);
-
-  //https://www.openstreetmap.org/?mlat=23.86635&mlon=90.31427#map=17/23.86635/90.31427
-
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-map.scrollZoom.disable();
-</script> -->
